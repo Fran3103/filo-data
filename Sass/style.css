@@ -3,9 +3,8 @@
 /* Version mobile 375px*/
 body {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
   background: url(/images/bg-mobile.png);
 }
 body .cards-container {
@@ -58,21 +57,21 @@ body .cards-container .card-2 {
   justify-content: center;
   position: relative;
 }
-body .cards-container .card-2 h1 {
-  font-size: 12px;
-  color: hsl(243deg, 100%, 93%);
-  font-weight: 400;
-  position: relative;
-  top: 20px;
-}
-body .cards-container .card-2 h1 span {
-  color: hsl(243deg, 100%, 93%);
-  font-weight: 700;
-}
 body .cards-container .card-2 .barra {
   position: relative;
   top: 20px;
   width: 80%;
+}
+body .cards-container .card-2 .barra h1 {
+  font-size: 11px;
+  color: hsl(243deg, 100%, 93%);
+  font-weight: 400;
+  margin-left: 10px;
+  align-self: center;
+}
+body .cards-container .card-2 .barra h1 span {
+  color: hsl(243deg, 100%, 93%);
+  font-weight: 700;
 }
 body .cards-container .card-2 .barra .box-degradado {
   width: 100%;
@@ -127,6 +126,79 @@ body .cards-container .card-2 .boton h5 {
   font-size: 14px;
   color: hsl(229deg, 7%, 55%);
 }
-body .cards-container footer {
-  margin: 50px 0;
+body footer {
+  margin: 90px 0 0 0;
+}
+
+/*  Version 720px */
+@media screen and (min-width: 380px) {
+  body {
+    background: url(/images/bg-desktop.png) no-repeat 0% 170% hsl(229deg, 57%, 11%);
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-position: 0% 160%;
+  }
+  body .cards-container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 200px 400px;
+    grid-row: auto auto;
+    max-width: none;
+  }
+  body .cards-container .card-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body .cards-container .card-2 {
+    margin-top: 30px;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+  body .cards-container .card-2 .barra {
+    top: 40px;
+  }
+  body .cards-container .card-2 .barra h1 {
+    font-size: 14px;
+    top: 40px;
+    align-self: self-start;
+    margin-left: 0;
+  }
+  body .cards-container .card-2 .boton {
+    top: -120px;
+    left: 100px;
+    width: 160px;
+    border-radius: 10px 10px 0 10px;
+  }
+  footer {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+}
+/* Version 1440px*/
+@media screen and (min-width: 1100px) {
+  body {
+    background-position: 0% 170%;
+  }
+  body .cards-container {
+    grid-template-columns: 350px 540px;
+  }
+  body .cards-container .card-2 .boton {
+    left: 140px;
+    transform: scaleY(1px 1px 20px 44px);
+  }
+}
+@media screen and (min-height: 600px) {
+  body {
+    background-position: 0% 120%;
+  }
+}
+@media screen and (min-height: 700px) {
+  body {
+    background-position: 0% 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
