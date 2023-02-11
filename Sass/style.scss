@@ -72,16 +72,19 @@ body{
             background-color: $DarkBlue;
             border-radius: 10px;
             width: 100%;
-            height: 150px;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            position: relative;
 
             h1{
                 font-size: 12px;
                 color: $PaleBlue;
                 font-weight: 400;
+                position: relative;
+                top: 20px;
 
                 span{
                     color: $PaleBlue;
@@ -91,7 +94,11 @@ body{
 
 
             .barra{
+            
+                position: relative;
+                top: 20px;
                 width: 80%;
+                
                 .box-degradado{
                     width: 100%;
                     background-color: $VeryDarkBlue;
@@ -130,16 +137,35 @@ body{
                     font-weight: 700;
                     }
             }
-
-        }
             .boton{
                 width:180px ;
                 height: 72px;
                 background-color: $PaleBlue;
                 border-radius: 10px;
-                
+                position: relative;
+                top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    font-size: 40px;
+                    text-align: center;
+                    margin: 10px;
+                }
+                h5{
+                        
+                    font-size: 14px;
+                    color: $GrayishBlue;
+                    
+                }
 
             }
+        }
+
+        footer{
+                margin: 50px 0;
+
+        }
     }
     
 
