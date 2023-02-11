@@ -1,0 +1,171 @@
+@import url(/Sass/cssreload.css);
+
+
+$Gradientpink: hsl(6, 100%, 80%) ;
+$Gradientrose: hsl(335, 100%, 65%);
+
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+$font: 'Raleway';
+
+/* Version mobile 375px*/
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/bg-mobile.png);
+
+    .cards-container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 335px;
+        gap: 20px;
+
+        .card-1{
+            background-color: $DarkBlue;
+            width: 100%;
+            
+            border-radius: 10px 80px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            .logo{
+                width: 120px;
+                margin-bottom: 30px;
+                
+            }
+
+            .files{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap:10px;
+                .doc{
+                    background-color: $VeryDarkBlue;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    img{
+                        width: 18px;
+                        align-self: center;
+                    }
+                }
+            }
+
+        }
+
+        .card-2{
+            font-family: $font;
+            background-color: $DarkBlue;
+            border-radius: 10px;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-size: 12px;
+                color: $PaleBlue;
+                font-weight: 400;
+
+                span{
+                    color: $PaleBlue;
+                    font-weight: 700;
+                }
+            }
+
+
+            .barra{
+                width: 80%;
+                .box-degradado{
+                    width: 100%;
+                    background-color: $VeryDarkBlue;
+                    border-radius: 10px;
+                    
+                    
+                        .degradado{
+                        width: 80%;
+                        height: 15px;
+                        margin: 10px 0;
+                        
+                        background:linear-gradient(to left, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+                        border-radius: 10px;
+                        
+                            .box-circulo{
+                                width: 100%;
+                                height: 100%;
+                                display:flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                            
+                        .circulo{
+                            width: 9px;
+                            height: 9px;
+                            margin-right: 2px;
+                            border-radius: 50%;
+                            background-color: #fff;
+                        }}
+                    
+                }}
+                .gb{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 10px;
+                    color: $PaleBlue;
+                    font-weight: 700;
+                    }
+            }
+
+        }
+            .boton{
+                width:180px ;
+                height: 72px;
+                background-color: $PaleBlue;
+                border-radius: 10px;
+                
+
+            }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
